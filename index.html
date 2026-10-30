@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneesh Educational Institutions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #ffffff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #f47721;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f47721;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(120deg, #fff3e8, #ffffff);
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #e96b16;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f47721;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #d95c0b;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #ed701c;
+            margin-bottom: 20px;
+        }
+
+        .section-text {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Academics */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .course-card {
+            padding: 30px 20px;
+            border-radius: 10px;
+            background: #fff8f2;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .course-card h3 {
+            color: #e96b16;
+            margin-bottom: 12px;
+        }
+
+        .course-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Why Choose Us */
+        .why {
+            background: #fff4e9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            color: #f47721;
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact-details {
+            margin-top: 25px;
+            line-height: 2.2;
+            font-size: 17px;
+        }
+
+        .contact-details a {
+            color: #e96b16;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #f47721;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        /* Mobile */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero {
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HANEESH EDUCATIONAL INSTITUTIONS</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Haneesh Educational Institutions</h1>
+
+            <p>
+                Empowering young minds with knowledge, creativity,
+                confidence and excellence. We believe every child
+                deserves the opportunity to learn, grow and succeed.
+            </p>
+
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Our School</h2>
+
+        <p class="section-text">
+            Haneesh Educational Institutions is committed to providing
+            quality school education in a supportive and inspiring
+            learning environment. Our goal is to nurture students
+            academically, socially and personally while preparing
+            them for a bright future.
+        </p>
+    </section>
+
+    <!-- Academics -->
+    <section id="academics">
+        <h2 class="section-title">Our Academics</h2>
+
+        <p class="section-text">
+            We focus on building strong foundations and encouraging
+            students to explore their talents.
+        </p>
+
+        <div class="courses">
+
+            <div class="course-card">
+                <h3>Primary Education</h3>
+                <p>
+                    Building strong foundations through engaging
+                    learning and creative activities.
+                </p>
+            </div>
+
+            <div class="course-card">
+                <h3>Middle School</h3>
+                <p>
+                    Developing knowledge, critical thinking
+                    and problem-solving skills.
+                </p>
+            </div>
+
+            <div class="course-card">
+                <h3>High School</h3>
+                <p>
+                    Preparing students for academic excellence
+                    and future opportunities.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why">
+        <h2 class="section-title">Why Choose Haneesh?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Quality Education</h3>
+                <p>Learning focused on academic excellence.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Expert Guidance</h3>
+                <p>Supportive teaching and student development.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Creative Learning</h3>
+                <p>Encouraging curiosity and innovative thinking.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Bright Future</h3>
+                <p>Helping every student achieve their potential.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="section-text">
+            We would love to hear from you!
+            Get in touch with us for admissions and enquiries.
+        </p>
+
+        <div class="contact-details">
+            <p>📞 Phone:
+                <a href="tel:1234598764">12345 98764</a>
+            </p>
+
+            <p>✉ Email:
+                <a href="mailto:gayatri.alladi@gmail.com">
+                    gayatri.alladi@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <br>
+        <a href="mailto:gayatri.alladi@gmail.com" class="btn">
+            Enquire Now
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Haneesh Educational Institutions.
+            All Rights Reserved.
+        </p>
+        <p>Learning Today, Leading Tomorrow!</p>
+    </footer>
+
+</body>
+</html>
